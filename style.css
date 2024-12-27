@@ -49,6 +49,99 @@ body{
     background-color: darkorange;
 }
 
+/*Aqui são os estilos do meio*/
+
+.dividir-conteudo{
+    display: grid;
+    grid-template-areas: 
+    "conteudo-meio conteudo-meio conteudo-direito conteudo-direito"
+    ;
+}
+
+.conteudo-meio{
+    grid-area: conteudo-meio;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.bloco-conteudo{
+    margin: 20px;
+    padding: 10px;
+    background-color: #191a1e;
+    width: 300px;
+}
+
+.bloco-conteudo a{
+    color: white;
+    text-decoration: none;
+}
+
+.conteudo-direito{
+    grid-area: conteudo-direito;
+    background-color: #25262a;
+    margin: 20px 50px 20px 0px;
+    width: 300px;
+    text-align: center;
+}
+
+.lupa-busca{
+    margin: 20px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lupa-busca input{
+   background-color: #25262a;
+   padding: 10px;
+   color: white;
+   font-size: 15px;
+}
+
+.lupa-busca button{
+    background-color: #d82c2c;
+    color: white;
+    padding: 10px;
+}
+
+.destaques,.grupos,.parceiros{
+  width: 250px;
+  margin: auto;
+}
+
+.destaques img{
+    margin: 10px 0px;
+}
+
+.grupos img{
+    margin: 10px 0px;
+}
+
+.parceiros h2{
+    margin: 10px 0px;
+}
+
+.parceiros img{
+    width: 100px;
+}
+
+.tags{
+    margin: 10px 0px;
+}
+
+.tags a{
+   color: #d82c2c;
+   text-decoration: none;
+   margin: 10px 0px;
+}
+
+.tags a:hover{
+   background-color: darkorange;
+}
+
+/*Conteudo meio acima*/
+
 .ativado{
     background-color: darkorange;
 }
@@ -66,6 +159,14 @@ body{
     margin: 30px 0px;
 }
 
+.item-bloco a{
+    color: #d82c2c;
+}
+
+.item-bloco a:hover{
+    background-color: darkorange;
+}
+
 @media screen and (max-width:900px) {
     .item-tres-blocos{
         display: flex;
@@ -79,4 +180,38 @@ body{
     .item-bloco h4{
         margin: 20px 0px;
     }
+
+    .dividir-conteudo{
+        display: grid;
+        grid-template-areas: 
+        "conteudo-meio conteudo-meio"
+        "conteudo-direito conteudo-direito"
+        ;
+    }
+
+    .conteudo-meio{
+        grid-area: conteudo-meio;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .bloco-conteudo{
+        margin: 10px auto;
+        padding: 5px;
+        background-color: #191a1e;
+        width: auto;
+        text-align: center;
+    }    
+
+    .conteudo-direito{
+        grid-area: conteudo-direito;
+        background-color: #25262a;
+        margin: 20px 50px 20px 0px;
+        width: 300px;
+        margin: auto;
+        text-align: center;
+    }
+    
 }
