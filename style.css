@@ -193,7 +193,6 @@ body{
         grid-area: conteudo-meio;
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
         justify-content: center;
     }
 
@@ -201,17 +200,19 @@ body{
         margin: 10px auto;
         padding: 5px;
         background-color: #191a1e;
-        width: auto;
         text-align: center;
+        width: 250px;
     }    
 
     .conteudo-direito{
         grid-area: conteudo-direito;
         background-color: #25262a;
-        margin: 20px 50px 20px 0px;
-        width: 300px;
-        margin: auto;
+        margin: 0px auto;
         text-align: center;
+    }
+
+    .menus-top{
+        display: none;
     }
     
 }
